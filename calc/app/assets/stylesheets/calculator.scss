@@ -1,0 +1,59 @@
+
+form {
+  width: 500px;
+	background-color: white;
+	text-align: center;
+	padding: 2rem;
+
+}
+
+#display {
+	width: 98%;
+	text-align: right;
+	font-size: 2rem;
+  line-height: 5rem;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.digit, .oper {
+	font-size: 2rem;
+	height: 55px;
+	width: 20%;
+	border: 0;
+	display: inline-block;
+	padding: 5px;
+  margin: 1px;
+}
+
+.digit {
+  background-color: #f6f6f6;
+  color: black;
+}
+
+.oper {
+	background-color: #f0f0f9;
+	color: blue;
+}
+
+.clean {
+	background-color: #dfd;
+  color: green;
+}
+
+.equals {
+  background-color: #f9f0f0;
+  color: red;
+}
+
+.digit:hover, .oper:hover {
+  background-color: #eee;
+}
+
+.digit:active, .oper:active {
+  background-color: #ddd;
+}
+
+.digit:focus, .oper:focus {
+  outline: 0;
+}
