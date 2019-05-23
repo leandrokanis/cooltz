@@ -3,7 +3,7 @@ require 'minitest/autorun'
 
 class TestMatrix < MiniTest::Unit::TestCase
   def setup
-    @matrix = [
+    @data =  [
       [ 1, 0, 1, 1, 0, 1, 0 ],
       [ 0, 0, 1, 0, 1, 0, 0 ],
       [ 1, 1, 1, 0, 1, 0, 0 ],
@@ -11,10 +11,11 @@ class TestMatrix < MiniTest::Unit::TestCase
       [ 1, 1, 1, 1, 0, 0, 1 ],
       [ 0, 1, 1, 1, 0, 0, 0 ]
     ]
+    @matrix = Matrix.new
   end
 
   def test_that_subsquare_area_size
-    assert_equal count(@matrix), 9
+    assert_equal(9, @matrix.sub_square_area(@data))
   end
 
 end
